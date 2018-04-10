@@ -1,158 +1,64 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Moving App</title>
+</head>
+<body>
+	<div id="page">
+		<header id="head">
+			<div id="logo">
+				<h3>Move Now!</h3>
+			</div>
+			<navbar id="nav">
+				<ul>
+					<li id="navid"><a href="https://www.uhaul.com/">Truck Rental</a></li>
+					<li id="navid"><a href="https://www.apartmentfinder.com/">Apartment Finder</a></li>
+					<li id="navid">
+						<a href="https://www.google.com/search?q=find+a+mover&rlz=1C1CHBF_enUS746US746&oq=find+a+mover&aqs=chrome..69i57.55734j0j4&sourceid=chrome&ie=UTF-8">	Find a Mover
+						</a>
+					</li>
+				</ul>
+			</navbar>
+		</header>
+		<section id="title">
+			<h1>Time to Move?  Let our app help you out!</h1>
+			<h3 id="title2">Input your destination for quick facts and a cool pic!</h3>
+			  <aside id="midicons">
+				<h4>icon 1</h4>
+				<h4>icon 2</h4>
+				<h4>icon 3</h4>
+			 </aside>
+		</section>
+		<form id="form-container" class="form-container">
+        <label for="street">Street: </label><input type="text" id="street" value="">
+        <label for="city">City: </label><input type="text" id="city"  placeholder="city and state name" value="">
+        <button id="submit-btn">Submit</button>
+    </form>
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-body {
-	background-color: black;
-}
-#page, #head, #logo, #nav, #title, a {
-	color: white;
-}
-#page {
-	width: 100%;
-	height: 100vh;
-	background-image: url("movers.jpg");
-	background-repeat: no-repeat;
-	margin-top: 0;
-}
-header, section {
-	width: 100%;
-}
-#head {
-	height: 20%;
-}
-#head {
-	margin: 40px 10px 30px 10px;
-}
-#logo {
-	color: white;
-	float: left;
-	margin-left: 20px;
-}
-#title {
-	margin: 50px 20px 20px 20px;
-}
-#title2 {
-	margin-top: 20px;
-}
-h4{
-	display: inline;
-	margin: 30px;
-	color: white;
-	background-color: #299FE3;
-	padding: 5px;
-	border-radius: 20px;
-}
-#midicons {
-	text-align: center;
-	margin: 30px;
-}
-a {
-	text-decoration: none;
-}
-h1 {
-	font-size: 4rem;
-	text-align: center;
-}
-h3 {
-	font-size: 2rem;
-	text-align: center;
-}
-ul {
-	float: right;
-	margin-right: 20px;
-}
-#navid {
-	display: inline;
-	margin: 5px;
-	background-color: red;
-	border-radius: 20px;
-	padding: 3px;
-}
-.form-container {
-	text-align: center;
-	margin: 0 auto;
-}
-.bgimg {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    z-index:-1;
-    opacity:1;
-}
+    <hr>
 
-.greeting {
-    color:black;
-    text-shadow: 1px 1px 3px rgba(255,255,255, .5);
-    text-align: center;
-}
+    <h2 id="greeting" class="greeting">What City do you want to know about?</h2>
 
-.wikipedia-container {
-    float:right;
-    padding:10px;
-    margin-right: 10px;
-}
 
-.nytimes-container {
-	float: left;
-    padding: 10px;
-  }
+    <div class="wikipedia-container">
+        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
+        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!
+        </ul>
+    </div>
 
-.article-list {
-    margin: 0;
-    padding: 0;
-}
 
-.article {
-    list-style-type: none;
-    padding:10px;
-    border-top: 1px solid #CCC;
-}
-.article:first-child {
-    border-top:none;
-}
+    <div class="nytimes-container">
+        <h3 id="nytimes-header">New York Times Articles</h3>
+        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
+    </div>
+	</div>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
