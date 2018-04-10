@@ -1,4 +1,3 @@
-    
 function loadData() {
     //series of variables for the jQuery objects
     var $body = $('body');
