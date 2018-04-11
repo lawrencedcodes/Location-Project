@@ -76,8 +76,12 @@ header, section {
 #title {
 	margin: 50px 20px 20px 20px;
 }
+#title1 {
+	animation-duration: 1s;
+}
 #title2 {
 	margin-top: 20px;
+	animation-duration: 2s;
 }
 h4{
 	display: inline;
