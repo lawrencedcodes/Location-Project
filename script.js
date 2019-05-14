@@ -19,7 +19,7 @@ function loadData() {
     var streetviewUrl = 'http://maps.googleapis.com/maps/api/streetview?size=600x400&location='+streetAddress+'';
     $body.append('<img class="bgimg" src="'+streetviewUrl+'">');
     //NYT info
-    var nytUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+cityStr+"&api-key=a585ea5341cf4f5997a3796b43609da2"
+    var nytUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+cityStr+"&api-key=2zz24pB1jZvuH13Ckq7wFIzWpnO1oH7E"
     $.getJSON(nytUrl, function(data){
         $nytHeaderElem.text('New York Times articles about '+cityStr+"");
         entries = data.response.docs;
