@@ -16,7 +16,7 @@ function loadData() {
     var streetAddress = streetStr+' , '+cityStr;
     $greeting.text('Oh, you want to know about '+streetAddress+'!');
     //IMAGE info
-    var streetviewUrl = 'http://maps.googleapis.com/maps/api/streetview?size=600x400&location='+streetAddress+'';
+    var streetviewUrl = 'http://maps.googleapis.com/maps/api/streetview?size=600x400&key=AIzaSyA5BGB9G5Uv4X0ccuJA8Z2U4ISoRZWQbOE&location='+streetAddress+'';
     $body.append('<img class="bgimg" src="'+streetviewUrl+'">');
     //NYT info
     var nytUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+cityStr+"&api-key=2zz24pB1jZvuH13Ckq7wFIzWpnO1oH7E"
