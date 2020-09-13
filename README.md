@@ -1,2 +1,2 @@
 See it live here: https://onesirian.github.io/Location-Project/
-Fun Location app flexing my AJAX, JSON, and Google APi skills.
+Fun Location app utilizing AJAX and the Google Maps API.
